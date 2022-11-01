@@ -29,12 +29,15 @@ function App() {
   return (
     <div>
       <Header />
+
       <Route path='/welcome'>  // welcome route
         <Welcome />
       </Route>
+
       <Route path='/products'>  // products route
         <Products />
       </Route>
+
     </div>
   );
 }
@@ -60,3 +63,35 @@ root.render(
   </BrowserRouter>
 );
 ```
+
+---
+
+## **Creating Links to our Routes**
+
+_Creating a link to our routes is very similar to how it is done in traditional HTML with the anchor tag. Except we use the Link component and use the "to" prop instead of the href attribute._
+
+Here we create a Header with links to our `/welcome `and `/products` pages.
+
+```
+const Header = () => {
+  return (
+    <header>
+      <nav>
+        <ul>
+
+          <li>
+            <Link to='/welcome'>Welcome</Link>
+          </li>
+
+          <li>
+            <Link to='/products'>Products</Link>
+          </li>
+
+        </ul>
+      </nav>
+    </header>
+  );
+};
+```
+
+---
