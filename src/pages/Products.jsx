@@ -7,13 +7,13 @@ const Products = () => {
       <h1>Welcome to Products Page!</h1>
       <ul>
         <li>
-          <Link>Product 1</Link>
+          <Link to='/products/p1'>Product 1</Link>
         </li>
         <li>
-          <Link>Product 2</Link>
+          <Link to='/products/p2'>Product 2</Link>
         </li>
         <li>
-          <Link>Product 3</Link>
+          <Link to='/products/p3'>Product 3</Link>
         </li>
       </ul>
     </>
