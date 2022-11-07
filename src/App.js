@@ -16,7 +16,7 @@ function App() {
         <Route path='/products'>
           <Products />
         </Route>
-        <Route path='/product-detail/:productId'>
+        <Route path='/products/:productId'>
           <ProductDetail />
         </Route>
       </main>
@@ -28,4 +28,4 @@ export default App;
 
 // localhost/welcome => Welcome Component
 // localhost/products => Products Component
-// localhost/product-detail/<value> => Product Detail Component
+// localhost/products/<value> => Product Detail Component
