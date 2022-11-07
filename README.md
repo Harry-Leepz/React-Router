@@ -95,3 +95,29 @@ const Header = () => {
 ```
 
 ---
+
+## **Redirecting The User using Routes**
+
+_Sometimes you may want to redirect a user to a certain page you have, it could be the home page. This can easily be implemented using `Redirect` from `react-router-dom`._
+
+- In this example we'll redirect the user to the `/welcome` route after they open the app.
+
+```
+import { Route, Switch, Redirect } from "react-router-dom";
+
+
+  <Switch>
+    <Route path='/' exact>
+      <Redirect to='/welcome' />
+    </Route>
+
+    <Route path='/welcome'>
+      <Welcome />
+    </Route>
+  </Switch>
+
+```
+
+- Notice how the pth in the route is set match with the `exact` prop, and nested withing is the `Redirect` component with a path to the route we wish to show.
+
+---
