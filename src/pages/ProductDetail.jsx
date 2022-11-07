@@ -1,7 +1,17 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 
 const ProductDetail = () => {
-  return <div>ProductDetail</div>;
+  // extracting parameters from a url
+  const params = useParams();
+  console.log(params.productId);
+
+  return (
+    <div>
+      ProductDetail
+      <h1>{params.productId}</h1>
+    </div>
+  );
 };
 
 export default ProductDetail;
